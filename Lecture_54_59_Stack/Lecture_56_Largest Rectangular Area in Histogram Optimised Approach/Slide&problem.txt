@@ -1,0 +1,8 @@
+Slides Link: https://drive.google.com/file/d/1MpZEoXjy2rXAvsoMCD53oZfwA5C_v4hN/view
+
+
+
+Questions Links:
+-  Next Smaller Element : https://bit.ly/34GjYL4
+
+- Largest Rectangular Area in Histogram:https://leetcode.com/problems/largest-rectangle-in-histogram/

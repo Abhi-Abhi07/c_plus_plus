@@ -1,0 +1,6 @@
+Slides Link: https://drive.google.com/file/d/1aZR-yGzOShHiIAH3Owar1KV0u0UT-9nJ/view
+
+Questions Links:
+-  Celebrity Problem : https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1
+
+- Max Rectangle in Binary Matrix with all 1's: https://practice.geeksforgeeks.org/problems/max-rectangle/1
