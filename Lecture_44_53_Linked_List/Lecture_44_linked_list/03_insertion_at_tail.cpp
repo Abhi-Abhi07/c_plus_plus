@@ -27,7 +27,6 @@ Node* nod1=new Node(10);
 
 // head pointed to nod1
 Node* head=nod1;
-
 // tail pointed to nod1
 Node* tail=nod1;
 print(head);

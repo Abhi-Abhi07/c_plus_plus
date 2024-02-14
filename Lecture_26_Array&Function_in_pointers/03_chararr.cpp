@@ -22,6 +22,7 @@ cout<<&ptr<<endl;
 
 char c='z';
 char *p=&c;
+// jab tk null char nhi milta tab tk garbage value print hogi
 cout<<p<<endl;
 return 0;
 }

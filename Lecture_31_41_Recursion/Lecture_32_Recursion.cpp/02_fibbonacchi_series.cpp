@@ -18,8 +18,11 @@ using namespace std;
         //     a=b;
         //     b=ans;
         // }
+
+        int a=fib(n-1);
+        int b=fib(n-2);
+        int ans=a+b;
         
-        int ans=fib(n-1)+fib(n-2);
         return ans; 
     }
 int main(){

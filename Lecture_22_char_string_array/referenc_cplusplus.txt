@@ -1,0 +1,7 @@
+
+Strings cplusplus reference: https://cplusplus.com/reference/
+
+Stack Overflow Link:
+https://stackoverflow.com/questions/40716515/do-stdstrings-end-in-0-when-initialized-with-a-string-literal
+
+string insert : https://www.geeksforgeeks.org/stdstringinsert-in-c/

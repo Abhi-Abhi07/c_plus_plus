@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 class Node{
     public:
     int data;
@@ -16,110 +15,132 @@ class Node{
     ~Node(){
         int value=this->data;
         while(this->next!=NULL){
+            cout<<"Abhishek"<<endl;
             delete next;
             this->next=NULL;
         }
         cout<<"memory free for node data : "<<value<<endl;
     }
 };
-
-void insertAtHead(Node* &head, int d){
-    Node* temp = new Node(d);
-    temp->next=head;
-    head=temp;
+void insertAthead(Node* &head,int d){
+        Node* temp=new Node(d);
+        temp->next=head;
+        head=temp;
+}
+void insertAtTail(Node* &tail,int d){
+        Node* temp=new Node(d);
+        tail->next=temp;
+        tail=temp;
 }
 
-void insertAtTail(Node* &tail, int d){
-    Node* temp = new Node(d);
-    tail->next=temp;
-    tail=temp;
-}
-
-void insertAtMid(Node* &head, Node* &tail, int d, int pos){
+void insertAtMiddle(Node* &head,Node* &tail,int pos,int element){
     Node* temp=head;
-    int cnt=1;
-
-    // first pos ko handle kiya
     if(pos==1){
-        insertAtHead(head,d);
-        return;
+        // first pos ko handle kiya
+        insertAthead(head,element);
+            return;
     }
-
     // mid or last pos ko handle kiya
-    while(cnt<(pos-1)){
+    for(int i=2; i<pos; i++){
         temp=temp->next;
-        cnt++;
     }
-
     if(temp->next==NULL){
         // tail ko shi place par set kiya
-        insertAtTail(tail,d);
+        insertAtTail(tail,element);
         return;
     }
-
-    Node* nodToInsert=new Node(d);
-    nodToInsert->next=temp->next;
-    temp->next=nodToInsert;
+    Node* curr=new Node(element);
+    curr->next=temp->next;
+    temp->next=curr;
 }
 
-void deletenod(int pos, Node* &head, Node* &tail){
-
-    // deltion for first pos
+void deleteNodePosWise(Node* &head,Node* &tail,int pos){
     if(pos==1){
+        // deltion for first pos
         Node* temp=head;
         head=head->next;
         temp->next=NULL;
-        delete temp;
+        delete(temp);
     }
-
-    // deletion mid or last pos
     else{
-        Node* curr = head;
-        Node* pre = NULL;
-        int cnt=1;
-        while(cnt<pos){
-            pre=curr;
-            curr=curr->next;
-            cnt++;
+        Node* pre=head;
+        // deletion mid or last pos
+        for(int i=1; i<pos-1; i++){
+            pre=pre->next;
         }
+        Node* curr=pre->next;
         pre->next=curr->next;
         if(curr->next==NULL){
             // tail ko shi place par set kiya
             tail=pre;
         }
         curr->next=NULL;
-        delete curr;
-        
+        delete(curr);
     }
 }
-void print(Node* &head){
-    Node* temp=head;
-    while(temp!=NULL){
-        cout<<temp->data<<" ";
-        temp=temp->next;
-    }cout<<endl;
+
+void deleteNodeElementWise(Node* &head,Node* &tail,int element){
+    if(head->data==element){
+        Node* temp=head;
+        head=head->next;
+        temp->next=NULL;
+        delete(temp);
+        return;
+    }
+    Node* pre=head;
+    while(pre->next->data!=element){
+        pre=pre->next;
+    }
+    Node* curr=pre->next;
+    pre->next=curr->next;
+    if(curr->next==NULL){
+        tail=pre;
+    }else{
+    curr->next=NULL;
+    }
+    delete(curr);
+}
+
+void print(Node* head){
+    if(head==NULL){
+        return;
+    }
+    while(head!=NULL){
+        cout<<head->data<<" ";
+        head=head->next;
+    }
+    cout<<endl;
 }
 
 int main(){
-
-    Node* nod1 = new Node(3);
-    // cout<<n1->data<<endl;
-    // cout<<n1->next<<endl; 
-    
-    Node* head=nod1;
-    Node* tail=nod1;
+    Node* nod=new Node(10);
+    Node* head=nod;
+    insertAthead(head,14);
     print(head);
-    insertAtTail(tail,5);
+    insertAthead(head,16);
     print(head);
-    insertAtTail(tail,7);
+    insertAthead(head,18);
     print(head);
-    insertAtMid(head,tail,6,3);
+    Node* tail=nod;
+    insertAtTail(tail,11);
     print(head);
-    insertAtMid(head,tail,2,5);
+    insertAtTail(tail,12);
+    print(head);
+    insertAtTail(tail,13);
+    print(head);
+    insertAtMiddle(head,tail,3,33);
+    print(head);
+    insertAtMiddle(head,tail,1,30);
+    print(head);
+    insertAtMiddle(head,tail,10,40);
     print(head);
     cout<<"head : "<<head->data<<endl;
     cout<<"tail : "<<tail->data<<endl;
-    deletenod(5,head,tail);
+    deleteNodePosWise(head,tail,5);
+    print(head);
+    cout<<"head : "<<head->data<<endl;
+    cout<<"tail : "<<tail->data<<endl;
+    deleteNodeElementWise(head,tail,40);
     print(head);
     cout<<"head : "<<head->data<<endl;
     cout<<"tail : "<<tail->data<<endl;

@@ -1,0 +1,15 @@
+
+Slides Link: https://drive.google.com/file/d/1Jz4kHC4cf4MV4me0BbU_xskXxDfi9vxm/view
+ 
+
+Questions Links:
+
+-  Sum of Longest BloodLine:https://practice.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1
+
+- LCA of Binary Tree:https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
+
+- K Sum paths:https://practice.geeksforgeeks.org/problems/k-sum-paths/1
+
+- Kth Ancestor:https://practice.geeksforgeeks.org/problems/kth-ancestor-in-a-tree/1
+
+- Max Sum of Non-Adjacent Nodes: https://practice.geeksforgeeks.org/problems/maximum-sum-of-non-adjacent-nodes/1

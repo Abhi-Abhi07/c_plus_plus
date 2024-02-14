@@ -1,0 +1,4 @@
+Questions Links:
+
+-  Min time to BURN tree: https://practice.geeksforgeeks.org/problems/burning-tree/1
+

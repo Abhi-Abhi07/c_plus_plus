@@ -12,14 +12,12 @@ for(int i:n){
     cout<<i<<" ";
 } 
 cout<<endl;
-
 list<int>a(n); //copy list n in list a;
 cout<<"print a"<<endl;
 for(int i:a){
     cout<<i<<" ";
 }
 cout<<endl;
-
 l.push_back(2);
 l.push_front(1);
 

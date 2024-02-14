@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-int arr[5]={34,45,23,78,2};
+int arr[3]={2,6,3};
 //best case time complexcity O(n)
 // space complexcity O(1) hoti he
 //worst case time complexcity O(n^2) hoti he
@@ -25,7 +25,7 @@ for(int i=0; i<n-1; i++){
     }
 }
 
-for(int i=0; i<5; i++){
+for(int i=0; i<n; i++){
     cout<<arr[i]<<" ";
 }
 return 0;

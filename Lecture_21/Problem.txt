@@ -1,7 +1,7 @@
 Question Links:
-- Rotate arrays: https://leetcode.com/problems/rotate-...
+- Rotate arrays: https://leetcode.com/problems/rotate-array/description/
 
-- Check if rotated and sorted array: https://leetcode.com/problems/check-i...
+- Check if rotated and sorted array:https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/
 
 - Add arrays: https://bit.ly/3DXfsDZ
  

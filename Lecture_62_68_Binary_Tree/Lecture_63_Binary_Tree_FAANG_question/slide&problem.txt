@@ -1,0 +1,13 @@
+Slides Link: https://drive.google.com/file/d/1GQmI-_LpOxbD5GvFc_6IDTcXXdkr5tbZ/view
+
+Questions Links:
+
+Height of Tree: https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1
+
+Diameter of Tree: https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1
+
+Balanced Tree or Not: https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1
+
+Tree Identical or Not:https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1
+
+Sum Tree or Not:https://practice.geeksforgeeks.org/problems/sum-tree/1

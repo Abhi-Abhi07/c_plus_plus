@@ -5,8 +5,6 @@ int partition(int *arr,int s, int e){
     int pivat=arr[s];
     int cnt=0;
     for(int i=s+1; i<=e; i++){
-        // ye line use kar skte he but niche wali line bhi change kre
-        // if(arr[i]<pivat){ 
         if(arr[i]<=pivat){
             cnt++;
         }
@@ -15,7 +13,6 @@ int partition(int *arr,int s, int e){
     swap(arr[pivatIndex],arr[s]);
     int i=s,j=e;
     while(i<pivatIndex  &&  j>pivatIndex){
-        // while(arr[i]<pivat){
         while(arr[i]<=pivat){
             i++;
         }

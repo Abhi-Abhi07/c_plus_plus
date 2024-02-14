@@ -6,9 +6,9 @@ using namespace std;
 //or
 //entire arr ko kisi bhi number se initialization
 int main(){
-int arr[100];
-fill_n(arr,100,1);
-for(int i=0; i<5; i++){
+int arr[10];
+fill_n(arr,10,1);
+for(int i=0; i<10; i++){
     cout<<arr[i]<<endl;
 }
 

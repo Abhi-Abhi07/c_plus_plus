@@ -1,5 +1,12 @@
 
-GCD reference: https://www.codingninjas.com/blog/202...
+GCD reference: https://www.codingninjas.com/studio/library/gcd-euclidean-algorithm
  
 Modular Arithmetics Reference: https://codeforces.com/blog/entry/72527
+ 
+
+ 
+Question Links:
+- Count primes:https://leetcode.com/problems/count-primes/description/
+ 
+- Modular Exponentiation: https://www.codingninjas.com/studio/problems/modular-exponentiation_1082146?utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_7&leftPanelTabValue=PROBLEM
  

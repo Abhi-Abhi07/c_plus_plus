@@ -1,15 +1,15 @@
 #include<iostream>
 using namespace std;
 
-#define PI 3.14
-int main(){
-    //macros is a piece of code in a program that is replaced by of macros
-// double pi=3.14;
-int r=5;
-double area=PI*r*r;
-cout<<"Area : "<<area;
-return 0;
-}
+// #define PI 3.14
+// int main(){
+//     //macros is a piece of code in a program that is replaced by of macros
+// // double pi=3.14;
+// int r=5;
+// double area=PI*r*r;
+// cout<<"Area : "<<area;
+// return 0;
+// }
 
 
 
@@ -92,27 +92,27 @@ return 0;
 // #include <iostream>
 // using namespace std;
 
-// // Multi-line Macro definition
-// #define ELE 1, \
-// 			2, \
-// 			3
+// Multi-line Macro definition
+#define ELE 1, \
+			2, \
+			3
 
-// // Driver Code
-// int main()
-// {
-// 	// Array arr[] with elements
-// 	// defined in macros
-// 	int arr[] = { ELE };
+// Driver Code
+int main()
+{
+	// Array arr[] with elements
+	// defined in macros
+	int arr[] = { ELE };
 
-// 	// Print elements
-// 	printf("Elements of Array are:\n");
+	// Print elements
+	printf("Elements of Array are:\n");
 
-// 	for (int i = 0; i < 3; i++) {
-// 		cout << arr[i] << ' ';
-// 	}
+	for (int i = 0; i < 3; i++) {
+		cout << arr[i] << ' ';
+	}
 
-// 	return 0;
-// }
+	return 0;
+}
 
 
 

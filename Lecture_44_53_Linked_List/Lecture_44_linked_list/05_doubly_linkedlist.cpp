@@ -30,23 +30,35 @@ int getlen(Node* &head){
     }
     return count;
 }
-void insertathead(Node* &head, int d){
-    Node* temp = new Node(d);
-    head->pre=temp;
-    temp->next=head;
-   
-    head=temp;
+Node* insertAtHead(Node* &head,Node* &tail,int data){
+    Node* temp=new Node(data);
+    if(head==NULL){
+        head=temp;
+        tail=temp;
+    }
+    else{
+        head->pre=temp;
+        temp->next=head;
+        head=temp;
+    }
 }
-void insertattail(Node* &tail,int d){
-    Node* temp=new Node(d);
-    tail->next=temp;
-    temp->pre=tail;
-    tail=temp;
+
+void insertAtTail(Node* &head,Node* &tail,int data){
+    Node* temp=new Node(data);
+    if(head==NULL){
+        head=temp;
+        tail=temp;
+    }
+    else{
+        tail->next=temp;
+        temp->pre=tail;
+        tail=temp;
+    }
 }
-void insertionatpos(Node* &head,Node* &tail, int pos, int d){
+void insertAtMddle(Node* &head,Node* &tail, int pos, int d){
     
     if(pos==1){
-        insertathead(head,d);
+        insertAtHead(head,tail,d);
         return ;
     }
     Node* temp=head;
@@ -56,7 +68,7 @@ void insertionatpos(Node* &head,Node* &tail, int pos, int d){
         count++;
     }
     if(temp->next==NULL){
-        insertattail(tail,d);
+        insertAtTail(head,tail,d);
         return ;
     }
     //middle pos ke liye
@@ -68,22 +80,36 @@ void insertionatpos(Node* &head,Node* &tail, int pos, int d){
 }
 
 int main(){
-Node* nod1=new Node(10);
-Node* head=nod1;
-Node* tail=nod1;
-// Node* head=NULL;
-// Node* tail=NULL;
-print(head);
-cout<<getlen(head)<<endl;
-insertattail(tail,1);
-print(head);
-insertattail(tail,56);
-print(head);
-insertattail(tail,34);
-print(head);
-insertionatpos(head,tail,5,5);
-print(head);
-cout<<tail->data<<endl;
-cout<<head->data<<endl;
+    Node* head=NULL;
+    Node* tail=NULL;
+    insertAtHead(head,tail,6);
+    print(head);
+    // cout<<"head->data : "<<head->data<<endl;
+    // cout<<"tail->data : "<<tail->data<<endl;
+    insertAtHead(head,tail,8);
+    print(head);
+    // cout<<"head->data : "<<head->data<<endl;
+    // cout<<"tail->data : "<<tail->data<<endl;
+    insertAtHead(head,tail,10);
+    print(head);
+    insertAtTail(head,tail,1);
+    insertAtTail(head,tail,3);
+    insertAtTail(head,tail,5);
+    print(head);
+    cout<<"head->data : "<<head->data<<endl;
+    cout<<"tail->data : "<<tail->data<<endl;
+    insertAtMddle(head,tail,7,20);
+    print(head);
+    cout<<"head->data : "<<head->data<<endl;
+    cout<<"tail->data : "<<tail->data<<endl;
+    insertAtMddle(head,tail,1,30);
+    print(head);
+    cout<<"head->data : "<<head->data<<endl;
+    cout<<"tail->data : "<<tail->data<<endl;
+    insertAtMddle(head,tail,5,50);
+    print(head);
+    cout<<"head->data : "<<head->data<<endl;
+    cout<<"tail->data : "<<tail->data<<endl;
+    cout<<"length is : "<<getlen(head)<<endl;
 return 0;
 }

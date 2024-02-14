@@ -1,7 +1,7 @@
 Question Links:
 - Reverse an Array: https://bit.ly/3EOyAFz
  
-- Merge 2 sorted arrays:https://leetcode.com/problems/merge-s...
+- Merge 2 sorted arrays:https://leetcode.com/problems/merge-sorted-array/description/
  
-- Move zeroes to end:https://leetcode.com/problems/move-ze...
+- Move zeroes to end:https://leetcode.com/problems/move-zeroes/description/
  

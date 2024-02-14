@@ -34,15 +34,14 @@ int a=4;
 int b=7;
 cout<<"max number is : "<<max(a,b)<<endl;
 cout<<"min number is : "<<min(a,b)<<endl;
-
 swap(a,b);
 cout<<"a --> "<<a<<endl;
 
 string abcd="abcd";
-reverse(abcd.begin(),abcd.end());
+reverse(abcd.begin(),abcd.begin()+4);
 cout<<"String --> "<<abcd<<endl;
 
-rotate(v.begin(),v.begin()+2,v.end());
+rotate(v.begin(),v.end()-1,v.end());
 cout<<"After rotate "<<endl;
 for(int i:v){
     cout<<i<<" ";

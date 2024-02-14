@@ -6,7 +6,7 @@ int main(){
 //multiple static array
 //deque Insertion and deltetion both opreation perform 
 //dynamic because size more/upp ho sakta he
-deque<int>d;
+deque<int>d(5,7);
  
 d.push_back(1);
 d.push_front(2);
@@ -19,9 +19,9 @@ for(int i:d){
 
 cout<<"Empty or not : "<<d.empty()<<endl;
 
-// cout<<"Size before pop : "<<d.size()<<endl;
-// d.pop_back();
-// cout<<"Size after pop: "<<d.size()<<endl;
+cout<<"Size before pop : "<<d.size()<<endl;
+d.pop_back();
+cout<<"Size after pop: "<<d.size()<<endl;
 
 cout<<"before erase size : "<<d.size()<<endl;
 d.erase(d.begin(),d.begin()+1);

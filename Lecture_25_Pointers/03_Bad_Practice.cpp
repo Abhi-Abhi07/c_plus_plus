@@ -3,7 +3,8 @@ using namespace std;
 
 int main(){
 
-// ppointer to int created and printing to some garbage value
+// pointer to int created and printing to some garbage value
+// suppose kisi read only memory ko point kar liya or usse baad me update kar diya to gadbad 
 // int *ptr;//Bad prctice
 // cout<<"-->"<<*ptr<<endl;
 

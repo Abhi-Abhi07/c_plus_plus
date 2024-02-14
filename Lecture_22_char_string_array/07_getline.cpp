@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 char s[30];
-cout<<"Enter string "<<"without delimeter :";
+cout<<"Enter string "<<"without delimeter : ";
 
 cin.getline(s ,30);
 cout<<s<<endl;

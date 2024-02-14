@@ -1,0 +1,5 @@
+Questions Links:
+
+-  Morris Traversal:  https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/
+
+- Flatten a Tree to LL: https://practice.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1

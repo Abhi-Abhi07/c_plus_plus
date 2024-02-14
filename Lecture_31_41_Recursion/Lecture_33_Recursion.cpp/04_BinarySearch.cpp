@@ -29,7 +29,9 @@ int size=sizeof(arr)/sizeof(arr[0]);
 int key;
 cout<<"Enter key : ";
 cin>>key;
-if(binarySearch(arr,0,size,key)){
+int s=0;
+int e=size-1;
+if(binarySearch(arr,s,e,key)){
     cout<<"Present"<<endl;
 }
 else{

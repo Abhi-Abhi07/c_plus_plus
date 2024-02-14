@@ -1,22 +1,22 @@
 Question Links:
 - Length of String
-- Reverse a String: https://leetcode.com/problems/reverse...
+- Reverse a String: https://leetcode.com/problems/reverse-string/description/
  
-- Check Palindrome:https://bit.ly/3E55FvF
+- Check If The String Is A Palindrome:https://bit.ly/3E55FvF
  
-- Valid Palindrome : https://leetcode.com/problems/valid-p...
+- Valid Palindrome : https://leetcode.com/problems/valid-palindrome/
  
 - Reverse words: https://leetcode.com/problems/reverse...
  
 - Maximum occurring character: https://practice.geeksforgeeks.org/pr...
  
-- Remove all occurrences of substring: https://bit.ly/3sfP71Q
+- Replace Spaces: https://www.codingninjas.com/studio/problems/replace-spaces_1172172?utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_5
  
-- Remove all adjacent duplicates: https://leetcode.com/problems/remove-...
+- Remove All Occurrences of a Substring: https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/
  
-- String Compression: https://leetcode.com/problems/string-...
+- String Compression: https://leetcode.com/problems/string-compression/submissions/
  
-- Permutation in Strings: https://leetcode.com/problems/permuta...
+- Permutation in Strings: https://leetcode.com/problems/permutation-in-string/submissions/968680885/
 
-- Remove adjacent Duplicates: https://leetcode.com/problems/remove-...
+- Remove adjacent Duplicates: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/
  

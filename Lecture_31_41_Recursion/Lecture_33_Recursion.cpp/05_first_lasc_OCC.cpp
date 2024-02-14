@@ -37,10 +37,12 @@ int lastOcc(int *arr,int s, int e, int key, int ans){
 int main(){
     int arr[]={2,4,7,9,13,16,16,16,16,17,18,18,18,20,23,23};
     int n=sizeof(arr)/sizeof(arr[0]);
-    int key=16;
+    int key;
+    cout<<"Enter key : ";
+    cin>>key;
     int s=0;
-    int ans=0;
-    cout<<"First : "<<firstOcc(arr,s,n,key,ans)<<endl;
-    cout<<"Last : "<<lastOcc(arr,s,n,key,ans)<<endl;
+    int ans=-1;
+    cout<<"First : "<<firstOcc(arr,s,n-1,key,ans)<<endl;
+    cout<<"Last : "<<lastOcc(arr,s,n-1,key,ans)<<endl;
 return 0;
 }

@@ -25,10 +25,11 @@ for(int i=1; i<n; i++){
         }
         else{
             break;
-        }
+        } 
         j--;
     }
-    arr[j+1]=temp;
+    // arr[j+1]=temp;
+    arr[++j]=temp;
 }
 
 for(int i=0; i<n; i++){
