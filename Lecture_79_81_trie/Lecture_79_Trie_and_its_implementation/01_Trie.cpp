@@ -99,9 +99,17 @@ class Trie{
         deleteWord(child,word.substr(1));
         bool isPresent=false;
         cout<<"**"<<child->data<<endl;
+        cout<<"&&"<<root->children[index]->data<<endl;
         // woord ke aage kuch present hai ya nhi
         for(int i=0; i<256; i++){
-            if(!root->children[index] && root->children[index]->children[i]!=NULL){
+            // if(!root->children[index] && root->children[index]->children[i]!=NULL){
+            //     int a;
+            //     cout<<"Enter kuch bhi ";
+            //     cin>>a;
+            //     cout<<root->children[index]->data<<endl;
+            //     isPresent=true;
+            // }
+            if(root->children[index]->children[i]!=NULL){
                 isPresent=true;
             }
         }
@@ -120,21 +128,6 @@ class Trie{
         }
     }
     void verifyForCompleteDeletion(){
-        // char ch='D';
-        // int index=int(ch);
-        // if(root->children['D']->children['O']->children['M']==NULL){
-        //     cout<<"Yes it is NULL\n";
-        // }
-        // else{
-        //     cout<<"its not NULL\n";
-        // }
-        // if(root->children['D']->children['O']->children['M']->isTerminal){
-        //     cout<<"Yes it isTerminal is true\n";
-        // }
-        // else{
-        //     cout<<"Yes it isTerminal is false\n";
-        // }
-        // cout<<root->children['D']->children['O']->children['M']->data<<endl;
         for(int i=0; i<256; i++){
             if(root->children[i]!=NULL){
                 cout<<root->children[i]->data<<endl;
@@ -142,11 +135,13 @@ class Trie{
 
         }
     }
+
 };
 
 int main(){
     Trie *t=new Trie();
     t->insertWord("ARM");
+    t->insertWord("ARMER");
     t->insertWord("DO");
     t->insertWord("DOKER");
     t->insertWord("DOM");
@@ -158,10 +153,11 @@ int main(){
     // t->searchWord("DO");
     t->deletionWord("ARM");
     cout<<"\nAfter Deletion !\n";
+     t->searchWord("ARMER");
     t->searchWord("DO");
     t->searchWord("DOM");
     t->searchWord("DOKER");
     cout<<endl<<"Complete\n"<<endl;
-    // t->verifyForCompleteDeletion();
+    t->verifyForCompleteDeletion();
 return 0;
 }

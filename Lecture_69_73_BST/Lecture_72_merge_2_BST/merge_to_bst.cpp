@@ -215,7 +215,7 @@ int main(){
     head2->left=NULL;
 
     Node* head=mergeTwoLL(head1,head2);
-    print(head);
+    // print(head);
     Node* root=sortedLLTobst(head,countNodes(head));
 
     levelOrderTraversal(root);

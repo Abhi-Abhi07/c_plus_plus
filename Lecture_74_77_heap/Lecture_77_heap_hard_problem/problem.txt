@@ -1,0 +1,7 @@
+Questions Links:
+
+- Median in a Stream:https://www.codingninjas.com/studio/problems/median-in-a-stream_975268?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
+
+- Smallest Range in K sorted List:https://www.codingninjas.com/studio/problems/smallest-range-from-k-sorted-list_1069356?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
+
+- Re-Organise Strings: https://www.naukri.com/code360/problems/rearrange-string_982765?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
