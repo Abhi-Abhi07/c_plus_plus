@@ -1,6 +1,9 @@
 // count set bits in first N natural no.
 // TC -> O(logN)
 #include<iostream>
+#include<climits>
+#include<algorithm>
+#include<math.h>
 using namespace std;
 int largestPower2InRange(int n){
     int x=0;
@@ -25,5 +28,6 @@ int main(){
     cout<<"Enter number : "<<endl;
     cin>>n;
     cout<<"total set bits are : "<<solve(n)<<endl;
+    cout<<(int(sqrt(n)));
 return 0;
 }

@@ -32,7 +32,7 @@ int main(){
     cout<<"Enter Number of test cases : ";
     cin>>t;
     while(t--){
-        cout<<"Enter r : ";
+        cout<<endl<<"Enter r : ";
         cin>>r;
         cout<<"Enter l : ";
         cin>>l;
@@ -48,7 +48,7 @@ int main(){
         for(auto i:primes){
             int firstmultiple=(l/i)*i;
             if(firstmultiple<l){
-                firstmultiple+i;
+                firstmultiple+=i;
             }
             for(int j=max(firstmultiple,i*i);j<=r; j=j+i){
                 if(j%i==0){
