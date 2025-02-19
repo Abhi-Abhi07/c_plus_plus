@@ -15,7 +15,7 @@ int pivotArray(int arr[], int n){
     //     mid=s+((e-s)/2);
     // }
     while(s<e){
-        if(arr[mid]>e){
+        if(arr[mid]>arr[e]){
             s=mid+1;
         }
         else{
